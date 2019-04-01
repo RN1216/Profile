@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pro_pic"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/girl_book" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_pro_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Reun Noor"
+            android:textColor="@color/colorGreen"
+            android:textSize="33dp"
+            android:textFontWeight="1"/>
+
+        <TextView
+            android:id="@+id/tv_prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:text="Project Manager"
+            android:textColor="@color/colorGray"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textFontWeight="1"/>
+
+        <TextView
+            android:id="@+id/tv_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prof"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="2dp"
+            android:text="Activity Level:87%"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:textFontWeight="1"/>
+
+        <TextView
+            android:id="@+id/tv_acti_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_activity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:text="Develop some Android Project "
+            android:textColor="@color/colorGray"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:textFontWeight="1"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:background="@color/colorLightGray"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/envelope"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/amplifier" />
+
+        <ImageButton
+            android:id="@+id/ib_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:src="@drawable/man_shape"
+            android:textAlignment="viewEnd" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+        android:id="@+id/iv_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+        android:src="@drawable/facebook"
+            android:textFontWeight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_fb"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/twitter"
+            android:textFontWeight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_insta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/iv_tweet"
+            android:src="@drawable/instagram"
+            android:textFontWeight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_ytb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/iv_insta"
+            android:src="@drawable/youtube"
+            android:textFontWeight="1"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ytb"
+            android:layout_marginTop="15dp"
+            android:text="Follow"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:textFontWeight="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/oval"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
